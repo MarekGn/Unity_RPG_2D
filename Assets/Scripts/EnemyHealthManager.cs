@@ -9,7 +9,7 @@ public class EnemyHealthManager : MonoBehaviour
 
     private PlayerStats thePlayerStats;
 
-    public int expTogive;
+    public int expToGive;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +25,7 @@ public class EnemyHealthManager : MonoBehaviour
         {
             Destroy(gameObject);
 
-            thePlayerStats.AddExpirience(expTogive);
+            thePlayerStats.AddExpirience(expToGive);
         }
 
     }
