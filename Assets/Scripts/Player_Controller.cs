@@ -21,6 +21,8 @@ public class Player_Controller : MonoBehaviour
 
     public string startPoint;
 
+    public bool canMove;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,12 +37,20 @@ public class Player_Controller : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        canMove = true;
     }
 
     // Update is called once per frame
     void Update()
     {
         playerMoving = false;
+
+        if (!canMove)
+        {
+            myRigibody.velocity = Vector2.zero;
+            return;
+        }
 
         if (!attacking)
         {

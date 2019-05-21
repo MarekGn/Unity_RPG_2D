@@ -170,6 +170,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToGive: 10
+  damageNumber: {fileID: 7216533768290101956, guid: 4fbeb2b2a2e59984bb05e0a03f466b8b,
+    type: 3}
 --- !u!114 &2731031881223481128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,3 +187,4 @@ MonoBehaviour:
   EnemyMaxHealth: 10
   EnemyCurrentHealth: 10
   expToGive: 25
+  enemyQuestName: RedSlime
