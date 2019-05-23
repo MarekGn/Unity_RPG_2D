@@ -6,12 +6,13 @@ public class Player_Controller : MonoBehaviour
 {
     public float moveSpeed;
     private float currentMoveSpeed;
-    public float diagonalMoveModifier;
+    //public float diagonalMoveModifier;
 
     private Animator anim;
     private Rigidbody2D myRigibody;
     private bool playerMoving;
     public Vector2 lastMove;
+	private Vector2 moveInput;
 
     private static bool playerExists;
 
@@ -22,12 +23,16 @@ public class Player_Controller : MonoBehaviour
     public string startPoint;
 
     public bool canMove;
+	
+	private SFXManager sfxMan;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         myRigibody = GetComponent<Rigidbody2D>();
+		sfxMan = FindObjectOfType<SFXManager>();
+		
         if (!playerExists)
         {
             playerExists = true;
@@ -39,6 +44,8 @@ public class Player_Controller : MonoBehaviour
         }
 
         canMove = true;
+		
+		lastMove = new Vector2(0, -1f);
     }
 
     // Update is called once per frame
@@ -54,7 +61,7 @@ public class Player_Controller : MonoBehaviour
 
         if (!attacking)
         {
-            if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
+           /* if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
             {
                 //transform.Translate(
                 //    new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
@@ -80,24 +87,38 @@ public class Player_Controller : MonoBehaviour
             if (Input.GetAxisRaw("Vertical") < 0.5f && Input.GetAxisRaw("Vertical") > -0.5f)
             {
                 myRigibody.velocity = new Vector2(myRigibody.velocity.x, 0f);
-            }
-
+            } */
+			moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+			
+			if(moveInput != Vector2.zero)
+			{
+				myRigibody.velocity = new Vector2(moveInput.x * moveSpeed, moveInput.y * moveSpeed);
+				playerMoving = true;
+				lastMove = moveInput;
+			} else {
+					
+					myRigibody.velocity = Vector2.zero;
+					}
+			
             if (Input.GetKeyDown(KeyCode.Z))
             {
                 attackTimeCounter = attackTime;
                 attacking = true;
                 myRigibody.velocity = Vector2.zero;
                 anim.SetBool("Attack", true);
+				
+				
+				sfxMan.playerAttack.Play();
             }
 
-            if(Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.5f && Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.5f)
+            /*if(Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.5f && Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.5f)
             {
                 currentMoveSpeed = moveSpeed / 1.4142f; 
             }
             else
             {
                 currentMoveSpeed = moveSpeed;
-            }
+            } */
         }
 
 
