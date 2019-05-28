@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainArea.unity
     guid: 2be136d0ff1aadc469ca8223fc9980e1
   - enabled: 1
-    path: Assets/Scenes/test_house_inside.unity
+    path: Assets/Scenes/CastleInside.unity
     guid: e77d5f6d1a9b15e4eac19a8dd02f68cc
   m_configObjects: {}
