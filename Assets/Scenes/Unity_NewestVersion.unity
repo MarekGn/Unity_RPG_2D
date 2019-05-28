@@ -759,6 +759,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime_Blue (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 935712403728122288, guid: 1d8edc298b4379548b9cea26847b0a67,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 935712403728122285, guid: 1d8edc298b4379548b9cea26847b0a67,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1653,6 +1658,66 @@ PrefabInstance:
     - target: {fileID: 8793637404489773836, guid: 31deff97423775a43af4c347b2981372,
         type: 3}
       propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185212279597534976, guid: 31deff97423775a43af4c347b2981372,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1534945057
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185212279597534976, guid: 31deff97423775a43af4c347b2981372,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185212279597534976, guid: 31deff97423775a43af4c347b2981372,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117226660343183435, guid: 31deff97423775a43af4c347b2981372,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1534945057
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117226660343183435, guid: 31deff97423775a43af4c347b2981372,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117226660343183435, guid: 31deff97423775a43af4c347b2981372,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9185634756078466876, guid: 31deff97423775a43af4c347b2981372,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1534945057
+      objectReference: {fileID: 0}
+    - target: {fileID: 9185634756078466876, guid: 31deff97423775a43af4c347b2981372,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9185634756078466876, guid: 31deff97423775a43af4c347b2981372,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193707258678906275, guid: 31deff97423775a43af4c347b2981372,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1534945057
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193707258678906275, guid: 31deff97423775a43af4c347b2981372,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193707258678906275, guid: 31deff97423775a43af4c347b2981372,
+        type: 3}
+      propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4576,7 +4641,7 @@ GameObject:
   - component: {fileID: 1304045836}
   m_Layer: 0
   m_Name: Slimes
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4738,6 +4803,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime_Blue (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 935712403728122288, guid: 1d8edc298b4379548b9cea26847b0a67,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 935712403728122285, guid: 1d8edc298b4379548b9cea26847b0a67,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4879,6 +4949,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Slime_Blue (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 935712403728122288, guid: 1d8edc298b4379548b9cea26847b0a67,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 935712403728122285, guid: 1d8edc298b4379548b9cea26847b0a67,
         type: 3}
@@ -5370,7 +5445,7 @@ GameObject:
   - component: {fileID: 1839788092}
   m_Layer: 0
   m_Name: BlueSlimes
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6006,6 +6081,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Slime_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 935712403728122288, guid: 1d8edc298b4379548b9cea26847b0a67,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 935712403728122285, guid: 1d8edc298b4379548b9cea26847b0a67,
         type: 3}
