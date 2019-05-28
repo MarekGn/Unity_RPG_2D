@@ -8,7 +8,6 @@ public class QuestObject : MonoBehaviour
 
     public QuestManager theQM;
 
-    public string startText;
     public string endText;
 
     public bool isItemQuest;
@@ -18,6 +17,10 @@ public class QuestObject : MonoBehaviour
     public string targetEnemy;
     public int enemiesToKill;
     private int enemyKillCount;
+
+    public string[] startQuestMsg;
+    public string[] inProgQuestMsg;
+    public string[] endQuestMsg;
 
     // Start is called before the first frame update
     void Start()
@@ -56,7 +59,7 @@ public class QuestObject : MonoBehaviour
 
     public void StartQuest()
     {
-        theQM.ShowQuestText(startText);
+        //theQM.ShowQuestText(startText);
     }
 
     public void EndQuest()
