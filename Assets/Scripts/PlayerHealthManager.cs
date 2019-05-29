@@ -69,4 +69,13 @@ public class PlayerHealthManager : MonoBehaviour
     {
         playerCurrentHealth = playerMaxHealth;
     }
+	public void AddplayerCurrentHealth(int HptoAdd)
+    {
+	playerCurrentHealth += HptoAdd;
+		if(playerCurrentHealth >= playerMaxHealth)
+		{
+			playerCurrentHealth=playerMaxHealth;
+		}	
+		
+    }
 }
