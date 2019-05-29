@@ -336,7 +336,7 @@ SpriteRenderer:
   m_SortingLayerID: 1534945057
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 178aecf7e0eda1b43b2ffb81cc6f131a, type: 3}
+  m_Sprite: {fileID: 21300006, guid: 178aecf7e0eda1b43b2ffb81cc6f131a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -530,7 +530,7 @@ SpriteRenderer:
   m_SortingLayerID: 1534945057
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 178aecf7e0eda1b43b2ffb81cc6f131a, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 178aecf7e0eda1b43b2ffb81cc6f131a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -613,63 +613,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 256559048}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &631109650
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 631109652}
-  - component: {fileID: 631109651}
-  m_Layer: 0
-  m_Name: ShortDialogue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &631109651
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631109650}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!4 &631109652
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631109650}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.034097, y: -14.196184, z: 17.80664}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &837621292
 GameObject:
@@ -793,7 +736,7 @@ SpriteRenderer:
   m_SortingLayerID: 1534945057
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 178aecf7e0eda1b43b2ffb81cc6f131a, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 178aecf7e0eda1b43b2ffb81cc6f131a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -864,9 +807,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f430923666ea5a04eae1646329c6910e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questNumber: 4
-  startQuest: 1
-  endQuest: 0
+  dialogue:
+  - If you get the bad guy, I'll buy you ice-cream...
 --- !u!61 &874230795
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1009,9 +951,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f430923666ea5a04eae1646329c6910e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questNumber: 4
-  startQuest: 1
-  endQuest: 0
+  dialogue:
+  - Heard any news from the other provinces?
+  - Nothing I'd like to talk about
 --- !u!61 &1277660937
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1105,12 +1047,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4392476426794334173, guid: 5ad5c7f908c982d48bb8d7d5a7c8f10c,
+    - target: {fileID: 8874355028395117780, guid: 5ad5c7f908c982d48bb8d7d5a7c8f10c,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8874355028395117780, guid: 5ad5c7f908c982d48bb8d7d5a7c8f10c,
+    - target: {fileID: 4392476426794334173, guid: 5ad5c7f908c982d48bb8d7d5a7c8f10c,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1191,9 +1133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f430923666ea5a04eae1646329c6910e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questNumber: 4
-  startQuest: 1
-  endQuest: 0
+  dialogue:
+  - What are you? Like 200 years old? My grandpa talks better trash than that dude.
 --- !u!61 &1732317830
 BoxCollider2D:
   m_ObjectHideFlags: 0
