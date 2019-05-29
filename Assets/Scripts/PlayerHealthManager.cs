@@ -6,12 +6,10 @@ public class PlayerHealthManager : MonoBehaviour
 {
     public int playerMaxHealth;
     public int playerCurrentHealth;
-    public int playerRegenerationTime;
 
     private bool flashActive;
     public float flashLength;
     private float flashCounter;
-    private float playerRegenerationCounter;
 
     private SpriteRenderer playerSprite;
 	
@@ -20,7 +18,6 @@ public class PlayerHealthManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerRegenerationCounter = playerRegenerationTime;
         playerCurrentHealth = playerMaxHealth;
 		sfxMan = FindObjectOfType<SFXManager>();
 
@@ -54,16 +51,6 @@ public class PlayerHealthManager : MonoBehaviour
                 flashActive = false;
             }
             flashCounter -= Time.deltaTime;
-        }
-
-        if(playerCurrentHealth < playerMaxHealth && playerRegenerationCounter < 0)
-        {
-            playerRegenerationCounter = playerRegenerationTime;
-            playerCurrentHealth += 1;
-        }
-        if(playerCurrentHealth < playerMaxHealth && playerRegenerationCounter > 0)
-        {
-            playerRegenerationCounter -= Time.deltaTime;
         }
         
     }

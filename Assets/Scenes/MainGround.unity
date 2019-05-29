@@ -1316,7 +1316,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMaxHealth: 50
   playerCurrentHealth: 0
-  playerRegenerationTime: 10
   flashLength: 0.5
 --- !u!1 &502325407
 GameObject:
@@ -2066,66 +2065,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1952214752568258222, guid: 31deff97423775a43af4c347b2981372,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1534945057
-      objectReference: {fileID: 0}
-    - target: {fileID: 1952214752568258222, guid: 31deff97423775a43af4c347b2981372,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1952214752568258222, guid: 31deff97423775a43af4c347b2981372,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2977645241076728712, guid: 31deff97423775a43af4c347b2981372,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1534945057
-      objectReference: {fileID: 0}
-    - target: {fileID: 2977645241076728712, guid: 31deff97423775a43af4c347b2981372,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2977645241076728712, guid: 31deff97423775a43af4c347b2981372,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6714217850199792918, guid: 31deff97423775a43af4c347b2981372,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1534945057
-      objectReference: {fileID: 0}
-    - target: {fileID: 6714217850199792918, guid: 31deff97423775a43af4c347b2981372,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6714217850199792918, guid: 31deff97423775a43af4c347b2981372,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8729312331121074946, guid: 31deff97423775a43af4c347b2981372,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1534945057
-      objectReference: {fileID: 0}
-    - target: {fileID: 8729312331121074946, guid: 31deff97423775a43af4c347b2981372,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8729312331121074946, guid: 31deff97423775a43af4c347b2981372,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31deff97423775a43af4c347b2981372, type: 3}
@@ -3623,78 +3562,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 683099274}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &769658330
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 769658331}
-  - component: {fileID: 769658333}
-  - component: {fileID: 769658332}
-  m_Layer: 0
-  m_Name: SandEntry
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &769658331
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769658330}
-  m_LocalRotation: {x: 0.0045052, y: 0.004974324, z: -0.0026764777, w: 0.9999739}
-  m_LocalPosition: {x: -32.35, y: 70.75, z: -0.06}
-  m_LocalScale: {x: 1.94453, y: 0.9690002, z: 1.02}
-  m_Children: []
-  m_Father: {fileID: 1821547482}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0.518, y: 0.569, z: -0.30400002}
---- !u!114 &769658332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769658330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10e31a7624b1a9c4ba1f0c9f19c01376, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelToLoad: Sand
-  exitPoint: SandStartPoint
---- !u!61 &769658333
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769658330}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 2.0764108, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 5.1528215, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &819151309
 GameObject:
   m_ObjectHideFlags: 0
@@ -5328,78 +5195,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!1 &1219413187
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1219413188}
-  - component: {fileID: 1219413190}
-  - component: {fileID: 1219413189}
-  m_Layer: 0
-  m_Name: SandOut
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1219413188
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219413187}
-  m_LocalRotation: {x: 0.0045052, y: 0.004974324, z: -0.0026764777, w: 0.9999739}
-  m_LocalPosition: {x: -31.09, y: 62.28, z: -0.13}
-  m_LocalScale: {x: 0, y: 0, z: 1.02}
-  m_Children: []
-  m_Father: {fileID: 1821547482}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0.518, y: 0.569, z: -0.30400002}
---- !u!114 &1219413189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219413187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 042b4718f6cb4df4981551d041739b91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0}
-  pointName: SandOutOutside
---- !u!61 &1219413190
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219413187}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &1274720744
 GameObject:
   m_ObjectHideFlags: 0
@@ -5992,9 +5787,9 @@ RectTransform:
   m_Father: {fileID: 1154445114}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 9.49, y: -5.56}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -5.23, y: 5.23}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1538590422 stripped
@@ -6441,8 +6236,6 @@ Transform:
   m_Children:
   - {fileID: 2129510540}
   - {fileID: 157774940}
-  - {fileID: 769658331}
-  - {fileID: 1219413188}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
